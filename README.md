@@ -70,7 +70,7 @@ If you find MoBA is useful or want to use in your projects, please kindly cite o
 ```
 @article{MoonshotMoBA,
   author = {Kimi Team},
-  title = {Mixture of Block Attention (MoBA) is the MoE for Looong-Context LLMs},
+  title = {MoBA: Mixture of Block Attention for Long-Context LLMs},
   year = {2025},
 }
 ```

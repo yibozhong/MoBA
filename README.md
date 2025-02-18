@@ -69,7 +69,7 @@ pytest tests/test_moba_attn.py
 If you find MoBA is useful or want to use in your projects, please kindly cite our paper:
 ```
 @article{MoonshotMoBA,
-  author = {Kimi Team},
+  author = {Lu, Enzhe and Jiang, Zhejun and Liu, Jingyuan and Du, Yulun and Jiang, Tao and Hong, Chao and Liu, Shaowei and He, Weiran and Yuan, Enming and Wang, Yuzhi and Huang, Zhiqi and Yuan, Huan and Xu, Suting and Xu, Xinran and Lai, Guokun and Chen, Yanru and Zheng, Huabin and Yan, Junjie and Su, Jianlin and Wu, Yuxin and Zhang, Neo Y. and Yang, Zhilin and Zhou, Xinyu and Zhang, Mingxing and Qiu, Jiezhong},
   title = {MoBA: Mixture of Block Attention for Long-Context LLMs},
   year = {2025},
 }

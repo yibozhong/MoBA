@@ -34,7 +34,7 @@ def generate_data(batch, seqlen, num_q_head, num_kv_head, headdim, dtype):
     return q, k, v, cu_seqlen, max_seqlen.item()
 
 
-@pytest.mark.parametrize("batch", [1, 4, 7])  # can be arbitary
+@pytest.mark.parametrize("batch", [1, 4, 7])  # can be arbitrary
 @pytest.mark.parametrize("head", [1, 2, 4, 8])
 @pytest.mark.parametrize("seqlen", [512, 1024, 2048])
 @pytest.mark.parametrize("head_dim", [128])

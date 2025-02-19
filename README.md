@@ -37,7 +37,7 @@ Our code is available at [MoonshotAI/MoBA](https://github.com/MoonshotAI/MoBA).
 
 
 ## Environment Setup
-**Note that current kernel implementations rely on `flash-attn==2.6.3`**
+**Note that current kernel implementations rely on `flash-attn==2.6.3` and `torch >= 2.1.0`**
 
 ```bash
 conda create -n moba python=3.10

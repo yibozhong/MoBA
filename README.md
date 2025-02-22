@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="MoBA_Tech_Report.pdf"><img width="80%" src="figures/banner.png"></a>
+  <a href="https://arxiv.org/abs/2502.13189"><img width="80%" src="figures/banner.png"></a>
 </p>
 
 # MoBA: Mixture of Block Attention for Long-Context LLMs
@@ -54,6 +54,11 @@ Feel free to choose attention backends by `--attn` between `moba` and `moba_naiv
 python3 examples/llama.py --model meta-llama/Llama-3.1-8B --attn moba
 ```
 
+### Implementation Details
+- **moba_naive**: A naive implementation based on attention masks. It's designed to help understand how MoBA selects corresponding chunks. You may save and visualize the attention masks to see the block selection process.
+- **moba_efficient**: Our production-ready implementation optimized for performance. It achieves up to 40x speedup compared to moba_naive (tested with 32K sequence length, 1 attention head, MoBA Block 2048 and MoBA Topk 3). We recommend using this version for practical applications.
+
+
 ## Unit Tests
 ```bash
 pytest tests/test_moba_attn.py
@@ -68,9 +73,10 @@ pytest tests/test_moba_attn.py
 ## Citation
 If you find MoBA is useful or want to use in your projects, please kindly cite our paper:
 ```
-@article{MoonshotMoBA,
-  author = {Lu, Enzhe and Jiang, Zhejun and Liu, Jingyuan and Du, Yulun and Jiang, Tao and Hong, Chao and Liu, Shaowei and He, Weiran and Yuan, Enming and Wang, Yuzhi and Huang, Zhiqi and Yuan, Huan and Xu, Suting and Xu, Xinran and Lai, Guokun and Chen, Yanru and Zheng, Huabin and Yan, Junjie and Su, Jianlin and Wu, Yuxin and Zhang, Neo Y. and Yang, Zhilin and Zhou, Xinyu and Zhang, Mingxing and Qiu, Jiezhong},
+@article{lu2025mobamixtureblockattention,
+  author = {Enzhe Lu and Zhejun Jiang and Jingyuan Liu and Yulun Du and Tao Jiang and Chao Hong and Shaowei Liu and Weiran He and Enming Yuan and Yuzhi Wang and Zhiqi Huang and Huan Yuan and Suting Xu and Xinran Xu and Guokun Lai and Yanru Chen and Huabin Zheng and Junjie Yan and Jianlin Su and Yuxin Wu and Yutao Zhang and Zhilin Yang and Xinyu Zhou and Mingxing Zhang and Jiezhong Qiu},
   title = {MoBA: Mixture of Block Attention for Long-Context LLMs},
-  year = {2025},
+  journal={arXiv preprint arXiv:2502.13189},
+  year={2025}
 }
 ```
